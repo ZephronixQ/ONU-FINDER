@@ -353,8 +353,8 @@ async def main():
         elif operate == "disable":
             print(f"{YELLOW}ONU operate status is disabled — device not turned on{RESET}")
 
-        if speed not in ("full-1000", "1000full"):
-            print(f"{YELLOW}ONU speed is not [Full-1000] — current: {speed}{RESET}")
+        if speed not in ("full-100", "100full", "full-1000", "1000full"):
+            print(f"{YELLOW}ONU speed is not [Full-100/1000] — current: {speed}{RESET}")
 
     # ===== DETAIL LOGS =====
     if result.get("detail_logs"):
